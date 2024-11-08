@@ -22,7 +22,7 @@
 
         pushl %esp
 
-        call _BootMain // 进入Boot
+        call _Init // Init
 
         // 以下代码是_BootMain函数退出后
 
