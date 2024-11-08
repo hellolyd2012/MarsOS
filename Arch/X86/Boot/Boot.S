@@ -16,8 +16,8 @@
     StackBottom: // 栈底
 
 .section .text
-    .global boot
-    boot:
+    .global start
+    start:
         movl $StackTop, %esp // 初始化栈指针
 
         pushl %esp
