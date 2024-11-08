@@ -2,6 +2,6 @@
 // MarsOS X86 Boot代码
 // 其源码遵循GNU-LGPl V3.0
 
-void _BootMain()
+void _Init()
 {  
 }
