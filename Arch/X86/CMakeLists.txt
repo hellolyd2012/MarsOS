@@ -7,7 +7,8 @@ set(SOURCE_FILE)
 add_subdirectory(Boot)
 
 file(GLOB SOURCE_FILE "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp"
-                      "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
+                      "${CMAKE_CURRENT_SOURCE_DIR}/*.c"
+                      "${CMAKE_CURRENT_SOURCE_DIR}/*.S")
 
 if(SOURCE_FILE)
     add_library(${TARGET_NAME} "")
