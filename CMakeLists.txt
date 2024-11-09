@@ -21,6 +21,8 @@ endif()
 add_compile_options(-ffreestanding -nostdlib -fno-pie -fno-stack-protector -mcmodel=large -fno-asynchronous-unwind-tables -fno-exceptions)
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -nostdlib -z max-page-size=0x1000 -Wl,--build-id=none -static")
 
+include_directories(${CMAKE_SOURCE_DIR}/Includes)
+
 add_subdirectory(Arch)
 
 file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/Build.cpp" "")
