@@ -9,7 +9,7 @@ Speed=12
 
 echo "确保安装了Grub-Common xorriso Ninja Make GCC G++ CMake"
 echo "开始编译MarsOS..."
-echo "因为开发编译可能会出现CPU占用率达到100%的情况!"
+echo "因为开始编译可能会出现CPU占用率达到100%的情况!"
 
 rm -rf $BUILD_DIR
 
