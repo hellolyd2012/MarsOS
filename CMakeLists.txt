@@ -24,6 +24,7 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -nostdlib -z max-page-size
 include_directories(${CMAKE_SOURCE_DIR}/Includes)
 
 add_subdirectory(Arch)
+add_subdirectory(Kernel)
 
 file(WRITE "${CMAKE_CURRENT_BINARY_DIR}/Build.cpp" "")
 add_executable(Kernel.bin "${CMAKE_CURRENT_BINARY_DIR}/Build.cpp")
@@ -31,4 +32,5 @@ add_executable(Kernel.bin "${CMAKE_CURRENT_BINARY_DIR}/Build.cpp")
 target_link_libraries(Kernel.bin
     PRIVATE
         Arch
+        Kernel
 )
